@@ -4,18 +4,32 @@ export const config = {
   api: { bodyParser: false },
 };
 
-const backendOrigin =
-  process.env.IDEA_API_PROXY_ORIGIN ?? "http://127.0.0.1:8000";
+function getBackendOrigin(): string {
+  if (process.env.IDEA_API_PROXY_ORIGIN) {
+    return process.env.IDEA_API_PROXY_ORIGIN;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return "http://127.0.0.1:8000";
+}
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
   const authorization = req.headers.authorization ?? "";
+  const backendOrigin = getBackendOrigin();
 
-  const upstream = await fetch(`${backendOrigin}/api`, {
-    headers: { Authorization: authorization },
-  });
+  let upstream: Response;
+  try {
+    upstream = await fetch(`${backendOrigin}/api`, {
+      headers: { Authorization: authorization },
+    });
+  } catch (err) {
+    res.status(502).json({ error: "Backend unreachable" });
+    return;
+  }
 
   if (!upstream.ok || !upstream.body) {
     res.status(upstream.status).end(upstream.statusText);
