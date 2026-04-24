@@ -22,7 +22,7 @@ function IdeaGenerator() {
             }
 
             try {
-                const res = await fetch('/api/idea', {
+                const res = await fetch('/api', {
                     headers: { Authorization: `Bearer ${jwt}` },
                     signal: controller.signal,
                 });
