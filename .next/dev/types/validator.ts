@@ -3,6 +3,7 @@
 // This file validates that all pages and layouts export the correct types
 
 
+import type { NextApiHandler } from "next/types.js"
 
 type PagesPageConfig = {
   default: React.ComponentType<any> | ((props: any) => React.ReactNode | Promise<React.ReactNode> | never | void)
@@ -18,6 +19,19 @@ type PagesPageConfig = {
     maxDuration?: number
     runtime?: 'edge' | 'experimental-edge' | 'nodejs' | string // necessary unless config is exported as const
     regions?: string[]
+  }
+}
+
+type ApiRouteConfig = {
+  default: (req: any, res: any) => ReturnType<NextApiHandler>
+  config?: {
+    api?: {
+      bodyParser?: boolean | { sizeLimit?: number | string }
+      responseLimit?: string | number | boolean
+      externalResolver?: boolean
+    }
+    runtime?: 'edge' | 'experimental-edge' | 'nodejs' | string // necessary unless config is exported as const
+    maxDuration?: number
   }
 }
 
@@ -53,6 +67,22 @@ type PagesPageConfig = {
   type __Unused = __Check
 }
 
+// Validate ../../../pages/product.tsx
+{
+  type __IsExpected<Specific extends PagesPageConfig> = Specific
+  const handler = {} as typeof import("../../../pages/product.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
 
+// Validate ../../../pages/api/idea.ts
+{
+  type __IsExpected<Specific extends ApiRouteConfig> = Specific
+  const handler = {} as typeof import("../../../pages/api/idea.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
 
 

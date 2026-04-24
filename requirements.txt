@@ -1,4 +1,4 @@
-fastapi 
+fastapi
 uvicorn
 openai
-python-dotenv
+fastapi-clerk-auth

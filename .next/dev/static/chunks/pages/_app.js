@@ -1,12 +1,19 @@
 __turbopack_load_page_chunks__("/_app", [
-  "static/chunks/node_modules_next_dist_compiled_0o6l_m6._.js",
-  "static/chunks/node_modules_next_dist_shared_lib_0~pg0mt._.js",
-  "static/chunks/node_modules_next_dist_client_0pe1dg-._.js",
-  "static/chunks/node_modules_next_dist_0k8zr~w._.js",
+  "static/chunks/node_modules_@clerk_nextjs_dist_esm_0wl_wdl._.js",
+  "static/chunks/node_modules_next_dist_compiled_0loosso._.js",
+  "static/chunks/node_modules_next_dist_shared_lib_00bfw11._.js",
+  "static/chunks/node_modules_next_dist_client_0c6p5t2._.js",
+  "static/chunks/node_modules_next_dist_server_0i2lu8q._.js",
+  "static/chunks/node_modules_next_dist_0e1avrj._.js",
+  "static/chunks/node_modules_next_0yc~ct7._.js",
   "static/chunks/node_modules_react-dom_0bruynb._.js",
-  "static/chunks/node_modules_11l9xip._.js",
+  "static/chunks/node_modules_@clerk_shared_dist_runtime_03.tjjf._.js",
+  "static/chunks/node_modules_swr_dist_0mz23bs._.js",
+  "static/chunks/node_modules_@clerk_clerk-react_dist_0u2aj6x._.js",
+  "static/chunks/node_modules_@clerk_backend_dist_075pgqf._.js",
+  "static/chunks/node_modules_0pgnocb._.js",
   "static/chunks/[root-of-the-server]__0j_pbyy._.js",
   "static/chunks/styles_globals_0-xc3nc.css",
   "static/chunks/pages__app_07xvfw~._.js",
-  "static/chunks/turbopack-pages__app_02kfid.._.js"
+  "static/chunks/turbopack-pages__app_0q5mmqn._.js"
 ])

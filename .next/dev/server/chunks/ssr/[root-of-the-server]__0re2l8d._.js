@@ -51,24 +51,15 @@ function Document() {
         lang: "en",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$document$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["Head"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("title", {
-                        children: "Business Idea Generator"
-                    }, void 0, false, {
-                        fileName: "[project]/pages/_document.tsx",
-                        lineNumber: 7,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("meta", {
-                        name: "description",
-                        content: "AI-powered business idea generation"
-                    }, void 0, false, {
-                        fileName: "[project]/pages/_document.tsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("meta", {
+                    name: "description",
+                    content: "AI-powered business idea generation"
+                }, void 0, false, {
+                    fileName: "[project]/pages/_document.tsx",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/pages/_document.tsx",
                 lineNumber: 6,
                 columnNumber: 7
@@ -77,18 +68,18 @@ function Document() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$document$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["Main"], {}, void 0, false, {
                         fileName: "[project]/pages/_document.tsx",
-                        lineNumber: 14,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$document$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["NextScript"], {}, void 0, false, {
                         fileName: "[project]/pages/_document.tsx",
-                        lineNumber: 15,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/_document.tsx",
-                lineNumber: 13,
+                lineNumber: 12,
                 columnNumber: 7
             }, this)
         ]

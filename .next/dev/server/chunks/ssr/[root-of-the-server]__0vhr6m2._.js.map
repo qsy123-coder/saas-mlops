@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 82, "column": 0}, "map": {"version":3,"sources":["file:///D:/BaiduNetdiskDownload/react-project/saas/pages/_app.tsx"],"sourcesContent":["import { ClerkProvider } from '@clerk/nextjs';\r\nimport type { AppProps } from 'next/app';\r\nimport '../styles/globals.css';\r\n\r\nexport default function MyApp({ Component, pageProps }: AppProps) {\r\n  return (\r\n    <ClerkProvider {...pageProps}>\r\n      <Component {...pageProps} />\r\n    </ClerkProvider>\r\n  );\r\n}"],"names":["MyApp","Component","pageProps"],"mappings":";;;;;AAAA;;;;AAIe,SAASA,MAAM,EAAEC,SAAS,EAAEC,SAAS,EAAY;IAC9D,qBACE,qKAAC,mLAAa;QAAE,GAAGA,SAAS;kBAC1B,cAAA,qKAACD;YAAW,GAAGC,SAAS;;;;;;;;;;;AAG9B"}}]
+}
